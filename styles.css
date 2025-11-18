@@ -1,0 +1,34 @@
+/* File: styles.css */
+:root{
+--accent:#1565c0;
+--bg:#f7f9fc;
+--card:#ffffff;
+--muted:#666;
+--maxwidth:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#222; line-height:1.5}
+.container{max-width:var(--maxwidth); margin:0 auto; padding:1rem}
+.site-header{background:linear-gradient(90deg, rgba(21,101,192,0.08), rgba(21,101,192,0.02)); padding:1.25rem 0}
+.header-grid{display:flex; gap:1rem; align-items:center; justify-content:space-between}
+.profile h1{margin:0; font-size:1.6rem}
+.tagline{margin:.25rem 0 .5rem; color:var(--muted)}
+.contact p{margin:0.15rem 0}
+.card{background:var(--card); padding:1rem; border-radius:10px; box-shadow:0 6px 18px rgba(20,20,40,0.04); margin:1rem 0}
+.skills ul, .experience ul{padding-left:1.25rem}
+.two-col{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem}
+.btn{display:inline-block; text-decoration:none; padding:.5rem .75rem; border-radius:8px; background:var(--accent); color:#fff}
+.site-footer{padding:1rem 0; text-align:center; color:var(--muted)}
+.muted{color:var(--muted)}
+.project{border-left:3px solid rgba(21,101,192,0.12); padding:.6rem 0 .6rem 0.75rem; margin-bottom:0.75rem}
+
+
+/* Responsive tweaks */
+@media (max-width:720px){
+.header-grid{flex-direction:column; align-items:flex-start}
+.profile h1{font-size:1.25rem}
+}
+
+
+/* Small header for achievements page */
+.site-header.small{padding:.6rem 0}
